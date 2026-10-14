@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<div class="panel mx-auto" style="max-width:540px"><h1 class="h3">Create your account</h1><form method="post">{% csrf_token %}{{ form.as_p }}{% if next %}<input type="hidden" name="next" value="{{ next }}">{% endif %}<button class="btn btn-primary">Register</button></form></div>{% endblock %}
